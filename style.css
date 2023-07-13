@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Load Animation for desktop */
+ /* Load Animation for desktop */
 
 #loader {
   position: absolute;
@@ -38,26 +38,30 @@ body {
     transform: rotate(360deg);
   }
 }
-.row {
+
+.container-of-containerimg {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1076%26quot%3b)' fill='none'%3e%3cpath d='M -192.55830421661892%2c173 C -48.56%2c209.4 239.44%2c350 527.4416957833811%2c355 C 815.44%2c360 959.44%2c184.2 1247.441695783381%2c198 C 1535.44%2c211.8 1928.93%2c442.6 1967.441695783381%2c424 C 2005.95%2c405.4 1545.49%2c168.8 1440%2c105' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1235.5404456398949%2c212 C -1091.54%2c244.8 -803.54%2c399.8 -515.5404456398949%2c376 C -227.54%2c352.2 -83.54%2c104.6 204.45955436010513%2c93 C 492.46%2c81.4 677.35%2c282.6 924.4595543601051%2c318 C 1171.57%2c353.4 1336.89%2c279.6 1440%2c270' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1372.438193413217%2c205 C -1228.44%2c241.2 -940.44%2c406 -652.438193413217%2c386 C -364.44%2c366 -220.44%2c95.8 67.56180658678295%2c105 C 355.56%2c114.2 513.07%2c402.6 787.561806586783%2c432 C 1062.05%2c461.4 1309.51%2c288 1440%2c252' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -229.4562845489461%2c398 C -85.46%2c332.2 202.54%2c83.8 490.5437154510539%2c69 C 778.54%2c54.2 922.54%2c327.6 1210.543715451054%2c324 C 1498.54%2c320.4 1884.65%2c44.2 1930.543715451054%2c51 C 1976.43%2c57.8 1538.11%2c296.6 1440%2c358' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -750.3549880383827%2c419 C -606.35%2c389.6 -318.35%2c287.8 -30.354988038382604%2c272 C 257.65%2c256.2 401.65%2c339.8 689.6450119616173%2c340 C 977.65%2c340.2 1259.57%2c277.4 1409.6450119616175%2c273 C 1559.72%2c268.6 1433.93%2c309 1440%2c318' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -777.8071347819593%2c254 C -633.81%2c284 -345.81%2c423 -57.80713478195932%2c404 C 230.19%2c385 374.19%2c143.2 662.1928652180407%2c159 C 950.19%2c174.8 1226.63%2c461.2 1382.1928652180407%2c483 C 1537.75%2c504.8 1428.44%2c311 1440%2c268' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -930.454391459893%2c310 C -786.45%2c283.6 -498.45%2c136.8 -210.45439145989297%2c178 C 77.55%2c219.2 221.55%2c501.2 509.545608540107%2c516 C 797.55%2c530.8 1043.45%2c295.6 1229.545608540107%2c252 C 1415.64%2c208.4 1397.91%2c288.8 1440%2c298' stroke='rgba(0%2c 125%2c 255%2c 0.14)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1076'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .container-image {
-  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 70rem;
 }
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+  
 }
-
 .column img {
-  margin-top: 1rem;
-  vertical-align: middle;
+  margin-top: 2rem;
   width: 95%;
+  box-shadow: 1px 1px 10px 5px rgb(150, 150, 150);
 }
 .header {
   display: flex;
@@ -179,7 +183,7 @@ body {
   transition: .3s;
 }
 #learn-more:hover {
- background-color: rgb(255, 242, 216);
+ background-color: rgba(255, 242, 216, 0.8);
  color: blue;
 }
 #contact-me {
@@ -192,7 +196,9 @@ body {
   transition: .3s;
 }
 #contact-me:hover {
-  background-color:#A09B97;
+  background-color: rgba(209, 199, 144, 0.4);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
   color: white;
  }
 @media screen and (max-width: 600px) {
@@ -358,14 +364,14 @@ body {
     max-width: 50%;
   }
 }
-.reveal {
+.column {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active {
+.active {
   transform: translateY(0);
   opacity: 1;
 }
