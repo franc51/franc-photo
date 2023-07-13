@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Load Animation for desktop */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 122px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid rgb(69, 95, 209);
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.container-image {
+  padding: 1rem;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 1rem;
+  vertical-align: middle;
+  width: 95%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0.5rem 0 0.5rem;
+  font-family: "Passero One";
+  background-color: rgb(255, 255, 255);
+}
+.header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation a {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  font-family: "Passero One";
+  text-align: center;
+}
+
+.navigation a:hover {
+  color: black;
+}
+.navigation2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_button {
+  display: none;
+}
+
+.show_button {
+  display: block;
+}
+
+.image-button {
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+}
+.menu-div {
+  display: flex;
+  z-index: 1;
+  height: 100%;
+  width: 26rem;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  position: absolute;
+  left: 14rem;
+  top: -7rem;
+  display: none;
+  transition: 1s ease-in;
+  transform: translateX(-14rem);
+}
+.animate_bottom {
+  position: relative;
+}
+.show_my_menu {
+  display: block;
+}
+.cover {
+  height: 100vh;
+  width: 100%;
+  background-image: url("mobile_img/eu-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -20rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.landing-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 8rem;
+  left: 8rem;
+  width: 50rem;
+  height: 10rem;
+}
+.cover h1 {
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  font-weight: 600;
+  text-shadow: 5px 5px 10px blue;
+  opacity: 0.7;
+}
+.cover p {
+  font-family: "Passero One";
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 5px 5px 10px blue;
+  opacity: 0.7;
+}
+.buttons-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+}
+#learn-more {
+  background-color: blue;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+#learn-more:hover {
+ background-color: rgb(255, 242, 216);
+ color: blue;
+}
+#contact-me {
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+#contact-me:hover {
+  background-color:#A09B97;
+  color: white;
+ }
+@media screen and (max-width: 600px) {
+  /* Load Animation for mobile */
+
+  #loader {
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    z-index: 1;
+    width: 122px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid rgb(69, 95, 209);
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0.5rem 0 0.5rem;
+    font-family: "Passero One";
+    background-color: rgb(255, 255, 255);
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+  .navigation a {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-family: "Passero One";
+    text-align: center;
+  }
+
+  .navigation a:hover {
+    color: black;
+  }
+  .navigation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu_button {
+    display: block;
+    cursor: pointer;
+  }
+  .image-button {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+  }
+  .menu-div {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    left: 14rem;
+    top: -0.2rem;
+    display: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Passero One";
+    transform: translateX(-14rem);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .collapsed_menu {
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsed_menu a {
+    font-size: 1.8rem;
+    color: white;
+    padding-top: 1rem;
+    opacity: 0.7;
+  }
+  .animate_bottom {
+    position: relative;
+  }
+  .show_my_menu {
+    display: block;
+  }
+  .cover {
+    height: 110vh;
+    width: 100vw;
+    background-image: url("mobile_img/eu-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -42rem -3rem;
+    background-attachment: fixed;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 25rem 6rem;
+  }
+  .cover p {
+    font-family: "Passero One";
+  }
+  .cover h1 {
+    font-size: 2.2rem;
+    width: 20rem;
+    margin-left: -5rem;
+  }
+  .cover p {
+    margin-left: -5rem;
+    letter-spacing: 0;
+    font-size: 1.1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+    letter-spacing: 0;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation2 a {
+    display: block;
+  }
+  .menu_button {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
