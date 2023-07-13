@@ -323,26 +323,25 @@ body {
     background-image: url("mobile_img/eu-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -42rem -3rem;
+    background-position: -45rem -10rem;
     background-attachment: fixed;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    padding: 25rem 6rem;
   }
-  .cover p {
-    font-family: "Passero One";
+  .landing-div {
+    top: 20rem;
+    left: -12rem;
+    justify-content: space-evenly;
   }
   .cover h1 {
-    font-size: 2.2rem;
-    width: 20rem;
-    margin-left: -5rem;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
   }
   .cover p {
-    margin-left: -5rem;
     letter-spacing: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-family: "Passero One";
   }
-
   .header h1 {
     font-size: 1.5rem;
     padding-bottom: 0.2rem;
