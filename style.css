@@ -188,9 +188,9 @@ body {
 }
 #contact-me {
   border: none;
-  background-color: transparent;
+  background-color: rgb(255, 255, 114);
   border-radius: 4px;
-  color: white;
+  color: rgb(37, 36, 36);
   padding: 8px 16px;
   cursor: pointer;
   transition: .3s;
@@ -203,6 +203,9 @@ body {
  }
 @media screen and (max-width: 600px) {
   /* Load Animation for mobile */
+  body {
+    overflow: hidden;
+  }
 
   #loader {
     position: absolute;
@@ -279,27 +282,27 @@ body {
     justify-content: center;
     margin-top: -1rem;
   }
+
+  .show_my_menu {
+    transform: translateX(-38rem);
+    transition: 0.4s;
+  }
   .menu-div {
     z-index: 1;
-    height: 100vh;
+    height: 97vh;
     width: 100vw;
     background-color: rgb(0, 0, 0);
-    opacity: 0.7;
+    opacity: 0.85;
     position: absolute;
-    left: 14rem;
+    left: 38rem;
     top: -0.2rem;
-    display: none;
+    display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Passero One";
-    transform: translateX(-14rem);
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
   }
   .collapsed_menu {
-    height: 31rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,9 +317,6 @@ body {
   .animate_bottom {
     position: relative;
   }
-  .show_my_menu {
-    display: block;
-  }
   .cover {
     height: 110vh;
     width: 100vw;
@@ -330,12 +330,13 @@ body {
   }
   .landing-div {
     top: 20rem;
-    left: -12rem;
+    left: -13.5rem;
     justify-content: space-evenly;
   }
   .cover h1 {
     letter-spacing: 4px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
   }
   .cover p {
     letter-spacing: 0;
